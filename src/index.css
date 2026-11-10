@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --color-canvas: #0B0C10;
+  --color-surface: #121317;
+  --color-surface-lowest: #0d0e12;
+  --color-surface-low: #1a1b20;
+  --color-surface-card: #1f1f24;
+  --color-surface-high: #292a2e;
+  --color-surface-highest: #343439;
+  
+  --color-apex-red: #FF1E38;
+  --color-apex-red-hover: #FF334B;
+  --color-apex-red-subtle: rgba(255, 30, 56, 0.15);
+  --color-apex-red-glow: rgba(255, 30, 56, 0.35);
+
+  --color-border-dark: #262936;
+  --color-border-subtle: #1E212D;
+
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #A0A5B5;
+  --color-text-tertiary: #5A6072;
+}
+
+@layer base {
+  html, body {
+    background-color: #0B0C10;
+    color: #E3E2E8;
+    font-family: var(--font-sans);
+    letter-spacing: -0.01em;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Hide scrollbars for clean athletic mobile UI */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  * {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Material symbol filled variant helper */
+.icon-filled {
+  font-variation-settings: 'FILL' 1, 'wght' 600, 'GRAD' 0, 'opsz' 24;
+}
+
+.icon-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "APEX FIT - Biyomekanik ve Antrenman Performans Sistemi",
+  "description": "Hassas kas aktivasyon vektörleri, açı analizleri, canlı set takibi ve hipertrofi kılavuzu içeren elit antrenman platformu.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
